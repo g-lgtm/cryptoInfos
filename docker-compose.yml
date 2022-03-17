@@ -1,0 +1,21 @@
+version: '3.1'
+
+services:
+    backend:
+        container_name: walloftraders
+        build: ./backend
+        ports:
+            - 1574:1574
+        volumes: 
+            - './backend:/usr/src/app'
+            - /usr/src/app/node_modules/
+        environment: 
+            - PORT=1574
+    frontend:
+        build:
+            context: ./frontend
+            dockerfile: ./Dockerfile
+        ports:
+            - "3000:3000"
+        links:
+            - "backend:be"

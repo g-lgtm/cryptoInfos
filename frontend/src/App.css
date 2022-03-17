@@ -1,0 +1,29 @@
+.App {
+  text-align: center;
+}
+
+.crypto {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.137);
+}
+
+.table {
+  width: 100vw;
+  margin-top: 50px;
+}
+
+.center {
+  display: flex;
+  /* text-align: center; */
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  margin-left: 10px;
+}
+
+.body {
+  margin: 20px;
+}
